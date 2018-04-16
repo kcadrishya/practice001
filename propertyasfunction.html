@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Property as Function Example</title>
+    <script src="propertyasfunction.js"></script>
+</head>
+<body>
+    <script>
+    console.log("Color of our rectangle is "+rectangle.length);
+    console.log("area of rectangle is "+rectangle.area);
+    console.log(typeof rectangle.area());
+    
+    console.log("area of rectangle is "+rectangle.area());
+    console.log("area of rectangle is "+rectangle["area"]);    
+    </script>
+</body>
+</html>

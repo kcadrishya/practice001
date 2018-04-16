@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Constructor Example</title>
+    <script src="constructorexample.js"></script>
+</head>
+<body>
+    <script>
+        var rectangle=new Rectangle(3.3,2.5,"Blue");
+        //rectangle["outline"]="black";
+        rectangle.outline="Black";
+        console.log("The length of rectangle is : "+rectangle.length)
+        console.log("The color is : "+rectangle.outline);
+        console.log("removing the outline...");
+        delete rectangle.outline;
+        console.log("The color is : "+rectangle.outline);
+        </script>
+</body>
+</html>

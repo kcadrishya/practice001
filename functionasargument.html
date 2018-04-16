@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function as argument example</title>
+    <script>
+        
+           function compareTwoRectanglesByArea(rectangle1, rectangle2){
+            var area1=rectangle1.getArea();
+            var area2=rectangle2.getArea();
+            console.log("Comparing two rectangles by area: ");
+            return Math.sign(area1-area2);
+        }
+            function compareTwoRectangles(rect1, rect2, compareFunction){
+                return compareFunction(rect1, rect2);
+            }
+       
+       function Rectangle(length, breadth){
+           this.length=length;
+           this.breadth=breadth;
+           this.geArea=function(){
+               return this.length*this.breadth;
+           }
+       }
+    </script>
+</head>
+<body>
+    <script>
+    var rect1= new Rectangle(10,20);
+    var rect2=new Rectangle(20,30);
+    var ctr=  compareTwoRectangles(rect1, rect2, compareTwoRectanglesByArea);
+    console.log(ctr);   
+    </script>
+</body>
+</html>

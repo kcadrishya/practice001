@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function that returns function</title>
+    <script src="functionreturnsfunction.js"></script>
+</head>
+<body>
+    <script>
+    var rect = new Rectangle(4,5);
+    var circle = new Circle(8);
+    var area=getAreaFunction(rect);
+    var area1=getAreaFunction(circle);
+    console.log("Area of rectangle  : "+area(rect));
+    console.log("Area of circle : "+area1(circle));
+    </script>
+</body>
+</html>

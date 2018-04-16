@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Passed by Reference function</title>
+    <script src="passedbyref.js"></script>
+</head>
+<body>
+    <script>
+        var rect1=new Rectangle(10,10);
+        var weekDays=['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
+
+        console.log("Initial values: Rect length "+rect1.length+" Weekdays : "+weekDays);
+        modifyX(rect1, weekDays);
+        console.log("Final values: Rect length "+rect1.length+" Weekdays : "+weekDays);
+        
+        console.log("Initial values: Rect length "+rect1.length+" Weekdays : "+weekDays);
+        reassignX(rect1, weekDays);
+        console.log("Final values: Rect length "+rect1.length+" Weekdays : "+weekDays);
+        </script>
+</body>
+</html>

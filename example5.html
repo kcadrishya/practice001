@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Example for JavaScript</title>
+</head>
+<body>
+    <script>
+    function arrayStuff(){
+        var allDays=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+        var weekEnds=[];
+        for(var i=0;i<allDays.length;i++){
+            if(isWeekend(allDays[i])){
+                weekEnds.push(allDays[i]);
+            }
+        }
+        printArray(allDays, 'All Days');
+        printArray(weekEnds, 'Weekends');
+    }
+    function isWeekend(day){
+        if (day=='Sat'||day=='Sun'){
+            return true;
+        }
+        else return false;
+    }
+    function printArray(array, name){
+        console.log("Printing Array: "+ name);
+        console.log(array.length + " elements");
+        for(var i=0;i<array.length;i++){
+            console.log(i+" : "+array[i]);
+        }
+    }    
+    window.onload=arrayStuff;
+    </script>
+</body>
+</html>

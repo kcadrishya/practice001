@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Example 4</title>
+</head>
+<body>
+    <script>
+    window.onload = printX;
+    var x=5;
+    function printX(){
+        var x=10;
+        var pi=3.14;
+        e=2.13;
+        console.log("Inside printX: x=",x);
+        printAnotherX();
+    }    
+    function printAnotherX(){
+        
+        console.log("inside printAnotherX: x = "+x);
+        console.log("value of e : "+e);
+    }
+    </script>
+</body>
+</html>
